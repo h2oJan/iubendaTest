@@ -1,19 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script type="text/javascript">
-      var _iub = _iub || [];
-      _iub.csConfiguration = {"localConsentDomain":"iubendatest.onrender.com", "askConsentAtCookiePolicyUpdate":true,"enableGdpr":false,"enableUspr":true,"floatingPreferencesButtonDisplay":"bottom-right","lang":"en","siteId":3543679,"showBannerForUS":true,"tcfPurposes":{"2":"consent_only","7":"consent_only","8":"consent_only","9":"consent_only","10":"consent_only","11":"consent_only"},"usprApplies":true,"usprPurposes":"s,sh,adv,sd8,sd9,sd5","whitelabel":false,"cookiePolicyId":13114178, "banner":{ "closeButtonDisplay":false,"position":"float-top-center","showTitle":false }};
-      </script>
-      <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3543679.js"></script>
-      <script type="text/javascript" src="https://cdn.iubenda.com/cs/gpp/stub.js"></script>
-      <script type="text/javascript" src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>test Jan</title>
+        var _iub = _iub || [];
+        _iub.csConfiguration = {"localConsentDomain":"iubendatest.onrender.com", "askConsentAtCookiePolicyUpdate":true,"enableGdpr":false,"enableUspr":true,"floatingPreferencesButtonDisplay":"bottom-right","lang":"en","siteId":3543679,"showBannerForUS":true,"tcfPurposes":{"2":"consent_only","7":"consent_only","8":"consent_only","9":"consent_only","10":"consent_only","11":"consent_only"},"usprApplies":true,"usprPurposes":"s,sh,adv,sd8,sd9,sd5","whitelabel":false,"cookiePolicyId":13114178, "banner":{ "closeButtonDisplay":false,"position":"float-top-center","showTitle":false }};
+        </script>
+        <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3543679.js"></script>
+        <script type="text/javascript" src="https://cdn.iubenda.com/cs/gpp/stub.js"></script>
+        <script type="text/javascript" src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPP USNAT Testing</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Centers the content horizontally */
+        }
+
+        .box-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /* Evenly distributes the boxes horizontally */
+            width: 100%;
+            /* Ensures the boxes take the full width */
+            margin-top: 20px;
+            /* Adjust spacing between title and boxes */
+        }
+
+        .box {
+            width: 45%;
+            height: fit-content;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>test Jan</h1>
-  <p>Current Time: <span id="current-time"></span></p>
+
+    <div class="container">
+        <div class="page-title">GPP USNAT Testing</div>
+        <div class="box-container">
+            <div class="box">
+                <div class="title">Creative w/o previous interaction</div>
+
+                <div class="celtra-ad-v3">
+                    <!-- passthroughParameters[testPassthroughParam] = raw test -->
+                    <img src="data:image/png,celtra" style="display: none" onerror="
+                (function(img) {
+                    var params = {'accountId':'c8d1ae71','clickUrl':'','expandDirection':'undefined','preferredClickThroughWindow':'new','placementId':'8285dc1a','clickEvent':'advertiser','externalAdServer':'Custom','tagVersion':'html-standard-7'};
+                    [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w%.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } });
+                    var req = document.createElement('script');
+                    req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
+                    params.clientTimestamp = new Date/1000;
+                    params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset();
+                    params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2);
+                    var qs = '';
+                    for (var k in params) {
+                        qs += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
+                    }
+                    var src = 'https://ads.mab1.janvodopivec.celtra-test.com/36ca74e6/web.js?' + qs;
+                    req.src = src;
+                    img.parentNode.insertBefore(req, img.nextSibling);
+                })(this);
+            " />
+                </div>
+
+            </div>
+            <div class="box">
+                <div class="title">Creative with previous interaction</div>
+
+                <div class="celtra-ad-v3">
+                    <!-- passthroughParameters[testPassthroughParam] = raw test -->
+                    <img src="data:image/png,celtra" style="display: none" onerror="
+                (function(img) {
+                    var params = {'accountId':'c8d1ae71','clickUrl':'','expandDirection':'undefined','preferredClickThroughWindow':'new','placementId':'8285dc1a','clickEvent':'advertiser','externalAdServer':'Custom','tagVersion':'html-standard-7'};
+                    [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w%.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } });
+                    var req = document.createElement('script');
+                    req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
+                    params.clientTimestamp = new Date/1000;
+                    params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset();
+                    params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2);
+                    var qs = '';
+                    for (var k in params) {
+                        qs += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
+                    }
+                    var src = 'https://ads.mab1.janvodopivec.celtra-test.com/df803536/web.js?' + qs;
+                    req.src = src;
+                    img.parentNode.insertBefore(req, img.nextSibling);
+                })(this);
+            " />
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
