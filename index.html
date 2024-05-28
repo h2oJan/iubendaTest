@@ -3,17 +3,17 @@
 
 <head>
     <script type="text/javascript">
-        var _iub = _iub || [];
-        _iub.csConfiguration = {"localConsentDomain":"https://iubendaeu.onrender.com/","askConsentAtCookiePolicyUpdate":true,"enableTcf":true,"enableUspr":true,"floatingPreferencesButtonDisplay":"bottom-right","googleAdditionalConsentMode":true,"lang":"en","perPurposeConsent":true,"siteId":3642744,"tcfPurposes":{"2":"consent_only","7":"consent_only","8":"consent_only","9":"consent_only","10":"consent_only","11":"consent_only"},"usprApplies":true,"whitelabel":false,"cookiePolicyId":55263508, "banner":{ "acceptButtonDisplay":true,"closeButtonDisplay":false,"customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"ownerName":"iubendaeu.onrender.com","position":"float-top-center","rejectButtonDisplay":true,"showPurposesToggles":true,"showTitle":false,"showTotalNumberOfProviders":true }};
-    </script>
-    <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3642744.js"></script>
-    <script type="text/javascript" src="https://cdn.iubenda.com/cs/tcf/stub-v2.js"></script>
-    <script type="text/javascript" src="https://cdn.iubenda.com/cs/tcf/safe-tcf-v2.js"></script>
-    <script type="text/javascript" src="https://cdn.iubenda.com/cs/gpp/stub.js"></script>
-    <script type="text/javascript" src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+      var _iub = _iub || [];
+      _iub.csConfiguration = {"localConsentDomain":"iubendaeu.onrender.com","askConsentAtCookiePolicyUpdate":true,"enableTcf":true,"enableUspr":true,"floatingPreferencesButtonDisplay":"bottom-right","googleAdditionalConsentMode":true,"lang":"en","perPurposeConsent":true,"siteId":3642744,"tcfPurposes":{"2":"consent_only","7":"consent_only","8":"consent_only","9":"consent_only","10":"consent_only","11":"consent_only"},"usprApplies":true,"whitelabel":false,"cookiePolicyId":55263508, "banner":{ "acceptButtonDisplay":true,"closeButtonDisplay":false,"customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"ownerName":"iubendaeu.onrender.com","position":"float-top-center","rejectButtonDisplay":true,"showPurposesToggles":true,"showTitle":false,"showTotalNumberOfProviders":true }};
+      </script>
+      <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3642744.js"></script>
+      <script type="text/javascript" src="https://cdn.iubenda.com/cs/tcf/stub-v2.js"></script>
+      <script type="text/javascript" src="https://cdn.iubenda.com/cs/tcf/safe-tcf-v2.js"></script>
+      <script type="text/javascript" src="https://cdn.iubenda.com/cs/gpp/stub.js"></script>
+      <script type="text/javascript" src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GPP EU Testing</title>
+  <title>TCF via GPP API</title>
   <style>
     .container {
       display: flex;
@@ -57,35 +57,7 @@
 <body>
 
   <div class="container">
-    <div class="page-title">GPP EU Testing</div>
-    <div class="box-container">
-      <div class="box">
-        <div class="title">Creative w/o previous interaction</div>
-
-        <div class="celtra-ad-v3">
-            <!-- passthroughParameters[testPassthroughParam] = raw test -->
-            <img src="data:image/png,celtra" style="display: none" onerror="
-                (function(img) {
-                    var params = {'accountId':'c8d1ae71','clickUrl':'','widthBreakpoint':'','expandDirection':'undefined','preferredClickThroughWindow':'new','placementId':'7d8491e7','clickEvent':'advertiser','externalAdServer':'Custom','tagVersion':'html-standard-7'};
-                    [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w%.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } });
-                    var req = document.createElement('script');
-                    req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
-                    params.clientTimestamp = new Date/1000;
-                    params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset();
-                    params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2);
-                    var qs = '';
-                    for (var k in params) {
-                        qs += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
-                    }
-                    var src = 'https://ads.mab1.janvodopivec.celtra-test.com/79270834/web.js?' + qs;
-                    req.src = src;
-                    img.parentNode.insertBefore(req, img.nextSibling);
-                })(this);
-            "/>
-        </div>
-
-      </div>
-    </div>
+    <div class="page-title">TCF via GPP API</div>
   </div>
 
 </body>
