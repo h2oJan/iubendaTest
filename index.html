@@ -19,18 +19,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      /* Centers the content horizontally */
     }
 
     .box-container {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      /* Evenly distributes the boxes horizontally */
       width: 100%;
-      /* Ensures the boxes take the full width */
       margin-top: 20px;
-      /* Adjust spacing between title and boxes */
     }
 
     .box {
@@ -51,15 +47,76 @@
       font-size: 36px;
       margin-bottom: 20px;
     }
+
+    .input-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    textarea {
+      width: 50%;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+    }
   </style>
 </head>
 
 <body>
-
   <div class="container">
     <div class="page-title">TCF via GPP API</div>
+    <div class="input-container">
+      <textarea id="htmlInput" placeholder="Paste your HTML here..."></textarea>
+      <button id="applyButton">Load creative</button>
+    </div>
+    <div class="box-container">
+      <div class="box" id="outputContainer">
+        <!-- Rendered content will appear here -->
+      </div>
+    </div>
   </div>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      // Retrieve the saved HTML from localStorage
+      var savedHtml = localStorage.getItem('savedHtml');
+      if (savedHtml) {
+        document.getElementById('outputContainer').innerHTML = savedHtml;
+      }
+
+      // Retrieve the saved input text from localStorage
+      var savedInput = localStorage.getItem('savedInput');
+      if (savedInput) {
+        document.getElementById('htmlInput').value = savedInput;
+      }
+    });
+
+    document.getElementById('applyButton').addEventListener('click', function () {
+      var htmlInput = document.getElementById('htmlInput').value;
+      var outputContainer = document.getElementById('outputContainer');
+
+      // Clear previous content
+      outputContainer.innerHTML = '';
+
+      // Create a new div element and set its innerHTML to the input
+      var newDiv = document.createElement('div');
+      newDiv.innerHTML = htmlInput;
+
+      // Append the new div to the output container
+      outputContainer.appendChild(newDiv);
+
+      // Save the HTML to localStorage
+      localStorage.setItem('savedHtml', outputContainer.innerHTML);
+
+      // Save the input text to localStorage
+      localStorage.setItem('savedInput', htmlInput);
+    });
+  </script>
 </body>
 
 </html>
